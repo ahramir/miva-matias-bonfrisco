@@ -157,6 +157,45 @@ ul li a{
       gap: 1em;
       justify-content: start;
    }
+
+
+   /*animaciones*/
+            
+   .titulo2{
+      animation-name: titulo2;
+      animation-iteration-count: 1;
+      animation-duration: 1s;
+      color: black;
+      animation-timing-function: cubic-bezier(.33,.2,.25,.85);
+   }
+
+   @keyframes titulo2{
+      from{
+         transform: translate(-100px);
+         opacity: 0;
+      }
+      to{
+            transform: translate(0);
+            opacity: 1;
+
+      }
+   }
+   
+   /*Transiciones*/
+
+   .mapa{
+      height: 200px;
+      width: 200px;
+   }
+   .mapa{
+      transition: width 2s , height 2s;
+
+   }
+   .mapa:hover{
+      width: 50%;
+      height: 300px;
+      
+   }
    
   
 }
